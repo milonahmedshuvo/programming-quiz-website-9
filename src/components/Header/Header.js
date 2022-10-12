@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { XMarkIcon, Bars3Icon} from '@heroicons/react/24/solid';
 
 
-
 const Header = () => {
 
     const [open, setOpen] = useState(true)

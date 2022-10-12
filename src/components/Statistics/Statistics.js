@@ -9,7 +9,6 @@ const totalMarks=useLoaderData()
 
 const {data}=totalMarks;
 
-
     return (
         <div className=' mt-60'>
             

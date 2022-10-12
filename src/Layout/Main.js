@@ -5,8 +5,6 @@ import Header from '../components/Header/Header';
 
 
 
-
-
 const Main = () => {
     return (
         <div>
