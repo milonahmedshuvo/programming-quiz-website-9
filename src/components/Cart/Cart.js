@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 
 const Cart = ({item}) => {
 
-
 const {id, name , logo, total}=item
 
     return (
