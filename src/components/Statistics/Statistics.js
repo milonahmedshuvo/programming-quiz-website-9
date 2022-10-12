@@ -11,7 +11,7 @@ const {data}=totalMarks;
 
 
     return (
-        <div className=' mt-20'>
+        <div className=' mt-60'>
             
            <div className='w-60'>
            <LineChart width={400} height={300} data={data}>

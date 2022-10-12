@@ -6,7 +6,7 @@ const Qustion = () => {
     const idData=useLoaderData()
 
  
- const {questions}=idData.data
+ const {questions, name}=idData.data
  
 
 
@@ -19,6 +19,7 @@ const Qustion = () => {
                     questions.map((qus)=><Qus
                     key={qus.id}
                     qus={qus}
+                    name={name}
                     ></Qus>)
                 }
            

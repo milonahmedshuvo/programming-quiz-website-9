@@ -1,23 +1,43 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
-
+import { XMarkIcon, Bars3Icon} from '@heroicons/react/24/solid';
 
 
 
 const Header = () => {
+
+    const [open, setOpen] = useState(true)
+
+
+
+
     return (
-        <div className='flex justify-between p-5 bg-gray-200 '>
+        <div className='bg-indigo-400 '>
          
-         <div>
-            <p className='text-2xl text-amber-900	' >Website Name</p>
-         </div>
+         <div onClick={()=>setOpen(!open)} className=' w-6 text-white font-extrabold md:hidden '>
+                {
+                    open ? <XMarkIcon/> : <Bars3Icon/>
+                }
+            </div>
 
-        <div className='text-xl font-medium'>
-            <Link to='/' className='mr-3 hover:text-orange-400'>Home</Link>
-            <Link to='/statistics' className='mr-3  hover:text-orange-400'>Statistic</Link>
-            <Link to='/blog' className='mr-3  hover:text-orange-400'>Blog</Link>
-        </div>
 
+
+                <div>
+                                        
+                            
+
+                            <div className={`text-2xl font-bold flex flex-col md:flex-row w-full  items-center justify-end p-3  text-white bg-indigo-400  absolute duration-500	  ${open ? 'top-5' : 'top-[-245px]'} `}>
+                             
+                            <div className='mr-auto'>
+                                <p className='text-2xl text-amber-900 ' >Programming Quiz</p>
+                            </div>
+
+                                <Link to='/' className='mr-3 hover:text-orange-400'>Home</Link>
+                                <Link to='/statistics' className='mr-3  hover:text-orange-400'>Statistic</Link>
+                                <Link to='/blog' className='mr-3  hover:text-orange-400'>Blog</Link>
+                            </div>
+
+                </div>
         </div>
     );
 };

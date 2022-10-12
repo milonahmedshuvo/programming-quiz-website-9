@@ -5,7 +5,9 @@ import { BeakerIcon, EyeIcon } from '@heroicons/react/24/solid';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Qus = ({qus}) => {
+
+
+const Qus = ({qus,name}) => {
 const {correctAnswer, id, options, question }=qus
 
 
@@ -14,12 +16,12 @@ const notify = (id) =>{
 }
 
 const trueToFalse=(optValue)=>{
-    console.log(optValue)
+   
 
     if(optValue===correctAnswer){
-       toast('carrent answer korso')
+       toast('Your answer is correct')
     }else{
-       toast('tumi vul answer a click korso')
+       toast('Your answer is wrong')
     }
 }
 
@@ -31,7 +33,9 @@ const trueToFalse=(optValue)=>{
 
 
     return (
-        <div className=' mb-10 w-8/12 drop-shadow-lg bg-pink-50 pt-8 mt-10'>
+        <div className=' mb-10 w-8/12 drop-shadow-lg bg-pink-50 pt-8 mt-60'>
+
+              <h1 className='text-2xl font-bold mb-10 text-blue-800'>Quiz of {name}</h1>
 
            <div className='flex justify-around'>
                <h1 className='w-8/12 font-bold'>{question}</h1>
@@ -41,8 +45,9 @@ const trueToFalse=(optValue)=>{
 
            <div className='grid grid-cols-1 md:grid-cols-2 gap-10  p-8'>
             {
-                options.map((option)=> <Option
+                options.map((option, index)=> <Option
                 option={option}
+                key={index}
                 trueToFalse={trueToFalse}
                 ></Option> )
             }
@@ -53,3 +58,5 @@ const trueToFalse=(optValue)=>{
 };
 
 export default Qus; 
+
+

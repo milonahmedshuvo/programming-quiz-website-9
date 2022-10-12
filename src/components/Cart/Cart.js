@@ -8,7 +8,7 @@ const {id, name , logo, total}=item
 
     return (
         <div className=''>
-
+                
 
              <div className='border rounded pb-4'>
                 
