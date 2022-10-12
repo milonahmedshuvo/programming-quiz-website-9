@@ -13,7 +13,7 @@ const {id, name , logo, total}=item
              <div className='border rounded pb-4'>
                 
                 <div className='bg-sky-200'>
-                <img src={logo} alt="" />
+                <img className='w-full' src={logo} alt="" />
                 </div>
 
                 <div className='text-start mt-2 font-medium'>
@@ -21,7 +21,7 @@ const {id, name , logo, total}=item
                 </div>
 
                 <div className='flex justify-between mt-10'>
-                <p className='font-medium text-xl text-violet-400 ml-3'>{name}</p>
+                <p className='font-medium text-xl text-violet-400 ml-3 '>{name}</p>
                 <NavLink to={`/${id}`} className='bg-orange-500 text-xs  font-medium pt-1 pb-1 pl-2 pr-2 text-white rounded mr-2'>Start Qustion</NavLink>
                  </div>
              </div>

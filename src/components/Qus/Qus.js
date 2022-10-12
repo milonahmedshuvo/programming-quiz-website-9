@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
+
 const Qus = ({qus,name}) => {
 const {correctAnswer, id, options, question }=qus
 
@@ -17,11 +18,10 @@ const notify = (id) =>{
 
 const trueToFalse=(optValue)=>{
    
-
     if(optValue===correctAnswer){
-       toast('Your answer is correct')
+       toast('WOW!!.. Your Answer is Correct')
     }else{
-       toast('Your answer is wrong')
+       toast('Sorry!!. Your Answer is Wrong')
     }
 }
 
