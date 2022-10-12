@@ -26,16 +26,16 @@ const Header = () => {
                                         
                             
 
-                            <div className={`text-2xl font-bold flex flex-col md:flex-row w-full  items-center justify-end p-3  text-white bg-indigo-400  absolute duration-500	  ${open ? 'top-5' : 'top-[-245px]'} `}>
+                        <div className={`text-2xl font-bold flex flex-col md:flex-row w-full items-center justify-end p-3  text-white bg-indigo-400  absolute duration-500	  ${open ? 'top-5' : 'top-[-245px]'} `}>
                              
-                            <div className='mr-auto'>
-                                <p className='text-2xl text-amber-900 ' >Programming Quiz</p>
+                            <div className='md:mr-auto text-center' >
+                                <p className='text-3xl text-white mb-3'>Programming Quiz</p>
                             </div>
 
                                 <Link to='/' className='mr-3 hover:text-orange-400'>Home</Link>
                                 <Link to='/statistics' className='mr-3  hover:text-orange-400'>Statistic</Link>
                                 <Link to='/blog' className='mr-3  hover:text-orange-400'>Blog</Link>
-                            </div>
+                        </div>
 
                 </div>
         </div>
