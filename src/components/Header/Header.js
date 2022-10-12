@@ -24,7 +24,7 @@ const Header = () => {
 
                 <div>
                                         
-                            
+                        
 
                         <div className={`text-2xl font-bold flex flex-col md:flex-row w-full items-center justify-end p-3  text-white bg-indigo-400  absolute duration-500	  ${open ? 'top-5' : 'top-[-245px]'} `}>
                              
