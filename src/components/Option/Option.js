@@ -14,4 +14,5 @@ const Option = ({option, trueToFalse}) => {
     );
 };
 
+
 export default Option;
