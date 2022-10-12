@@ -29,9 +29,6 @@ const trueToFalse=(optValue)=>{
 
 
 
-
-
-
     return (
         <div className=' mb-10 w-8/12 drop-shadow-lg bg-pink-50 pt-8 mt-60'>
 
